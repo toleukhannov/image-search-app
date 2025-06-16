@@ -1,0 +1,23 @@
+.header {
+  background-color: $c-black;
+  padding: 37px 0;
+
+  .logo-img {
+    max-width: 178px;
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .favourites-link {
+    color: $c-white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+}

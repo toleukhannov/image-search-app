@@ -1,0 +1,16 @@
+// settings
+@import 'settings/colors';
+@import '@styles/settings/fonts';
+@import 'settings/variables';
+
+// generic
+@import 'generic/base';
+@import 'generic/containers';
+
+// components
+@import 'components/buttons';
+@import 'components/header';
+@import 'components/search';
+@import 'components/imageList';
+@import 'components/favourites';
+@import 'components/photoPage';

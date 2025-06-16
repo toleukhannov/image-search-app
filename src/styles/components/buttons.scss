@@ -1,0 +1,29 @@
+.download-button {
+  padding: 13px 23px;
+  background-color: $c-yellow;
+  color: $c-black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background-color: darken($c-yellow, 5%);
+  }
+}
+
+.favourites-button {
+  padding: 13px;
+  border-radius: 8px;
+  border: none;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($c-white, 20%);
+  }
+}
