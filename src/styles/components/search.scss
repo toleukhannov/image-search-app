@@ -7,17 +7,24 @@
     .search-input-wrapper {
       position: relative;
       margin: 0 auto;
-      width: 866px;
+      width: 100%;
+      max-width: 866px;
     }
 
     .search-input {
-      max-width: 866px;
       width: 100%;
+      max-width: 866px;
       padding: 21px 39px 21px 24px;
       font-size: 18px;
       font-weight: 300;
       border: none;
       position: relative;
+
+      @media (max-width: $screen-sm-max) {
+        max-width: 100%;
+        font-size: 15px;
+        padding: 16px 28px 16px 18px;
+      }
 
       &::placeholder {
         font-size: 18px;

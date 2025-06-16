@@ -6,6 +6,10 @@
   justify-content: center;
   gap: 30px;
 
+  @media (max-width: $screen-sm-max) {
+    flex-direction: column;
+  }
+
   &-item {
     width: 30%;
     height: 440px;
@@ -13,6 +17,10 @@
     position: relative;
     border-radius: 8px;
     cursor: pointer;
+
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+    }
 
     &:hover {
       .image {

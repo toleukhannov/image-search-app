@@ -4,6 +4,10 @@
 
   .logo-img {
     max-width: 178px;
+
+    @media(max-width: $screen-sm-max) {
+      max-width: 84px;
+    }
   }
 
   &-wrapper {
@@ -19,5 +23,11 @@
     align-items: center;
     gap: 10px;
     text-decoration: none;
+
+    p{
+      @media (max-width: $screen-sm-max) {
+        display: none;
+      }
+    }
   }
 }

@@ -15,7 +15,7 @@ const Header: FC = () => {
                     </Link>
                     <Link className="favourites-link" to={'/favourites'}>
                         <img alt="Избранное" className="favourites-link-img" src={favIcon}/>
-                        Избранное
+                        <p>Избранное</p>
                     </Link>
                 </div>
             </header>

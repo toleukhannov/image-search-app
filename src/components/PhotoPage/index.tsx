@@ -54,7 +54,7 @@ const PhotoPage: FC = () => {
                             rel="noopener noreferrer"
                         >
                             <img src={DownloadIcon} alt="Скачать" />
-                            Download
+                            <span>Download</span>
                         </a>
                     </div>
                 </div>
