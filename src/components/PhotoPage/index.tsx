@@ -6,8 +6,8 @@ import type { UnsplashImage } from "../../shared/types/types";
 // utils
 import { saveToFavourites } from "../../shared/utils/localStorage";
 // static
-import FavouritesIcon from "../../assets/icons/favourites.svg?react";
-import DownloadIcon from "../../assets/icons/download-icon.svg?react";
+import FavouritesIcon from "../../assets/icons/favourites.svg";
+import DownloadIcon from "../../assets/icons/download-icon.svg";
 
 const PhotoPage: FC = () => {
     const location = useLocation();
@@ -45,7 +45,7 @@ const PhotoPage: FC = () => {
 
                     <div className="photo-actions">
                         <button className="favourites-button" onClick={handleAddToFavourites}>
-                            <FavouritesIcon classname="favourites-icon"/>
+                            <img alt="Иконка избранного" src={FavouritesIcon} className="favourites-icon"/>
                         </button>
                         <a
                             className="download-button"
@@ -53,7 +53,7 @@ const PhotoPage: FC = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <DownloadIcon />
+                            <img src={DownloadIcon} alt="Скачать" />
                             Download
                         </a>
                     </div>
